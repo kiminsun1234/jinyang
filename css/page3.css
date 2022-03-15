@@ -31,6 +31,7 @@ header nav{float:right;}
 
 .sub_01{margin-bottom: 253px;}
 .sub_01 .intro_list ul{font-size: 0;}
+.hidden{display: none;}
 
 .sub_03 .inner div figure figcaption strong{position: absolute; left: 50%; top: 130%; transform: translate(-50%,-50%); font-size: 24px; z-index: 10;}
 .sub_03 .inner div figure figcaption::after{content: ''; display: block; position: absolute; left: 0; top: 0; width:100%; height: 100%; background-color: rgba(0, 0, 0, 50%); opacity: 0;}
