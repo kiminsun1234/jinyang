@@ -16,6 +16,32 @@ header.active{background-color: #F6F6F4;}
 .main p,
 .sub_03 .inner div figure figcaption strong{color: #F6F6F4;}
 
+
+.animate{
+    animation: fadeIn 1s forwards ease-in;
+    transition: 2s ease-in-out;
+}
+@keyframes fadeIn{
+    0%{opacity: 0; transform: translateY(30px);}
+    100%{opacity: 1; transform: translateY(0);}
+}
+.right{
+    animation: right_text 1s forwards ease-in;
+    transition: 2s ease-in-out;
+}
+@keyframes right_text{
+    0%{opacity: 0; transform: translateX(30px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+.left{
+    animation: left_text 1s forwards ease-in;
+    transition: 2s ease-in-out;
+}
+@keyframes left_text{
+    0%{opacity: 0; transform: translateX(-30px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+
 header{transition: 0.5s;}
 header .inner{padding:20px 0;}
 header h1{float:left;}
@@ -30,7 +56,10 @@ header nav{float:right;}
 .main p{display: block; padding: 5px 0;}
 
 .sub_01{margin-bottom: 253px;}
+.sub_01 .sub_introsm{opacity: 0;}
+
 .sub_01 .intro_list ul{font-size: 0;}
+.sub_01 .intro_list ul div{opacity: 0;}
 .hidden{display: none;}
 
 .sub_03 .inner div figure figcaption strong{position: absolute; left: 50%; top: 130%; transform: translate(-50%,-50%); font-size: 24px; z-index: 10;}
@@ -445,8 +474,9 @@ footer .address span i{font-style: normal;}
     }
     header nav ul li a{
         padding: 20px; font-size: 20px;
-        display: block;
+        display: block; color: #F6F6F4;
     }
+    .active nav ul li a{transition: 0.5s; color: #241C15;}
     .menu_i{display: none;}
     /* header fin */
     
